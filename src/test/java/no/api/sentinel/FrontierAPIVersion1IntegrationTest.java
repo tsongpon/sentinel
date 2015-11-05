@@ -70,6 +70,6 @@ public class FrontierAPIVersion1IntegrationTest {
                 .body("media.size", equalTo(46))
                 .body("bookings", anything())
                 .body("bookings[0].publications.size", equalTo(6))
-                .body("bookings[0].publications", hasItems("www.an.no"));
+                .body("bookings[0].publications", hasItems("www.tb.no"));
     }
 }
