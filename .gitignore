@@ -1,0 +1,15 @@
+*.iml
+*.ipr
+*.iws
+target/
+.idea/
+.project
+.classpath
+.settings
+*.class
+dependency-reduced-pom.xml
+
+# Package Files #
+*.jar
+*.war
+*.ear

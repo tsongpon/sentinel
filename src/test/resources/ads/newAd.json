@@ -1,0 +1,971 @@
+{
+  "id": null,
+  "data_type": null,
+  "state": null,
+  "transaction_type": 1,
+  "transaction_status": 0,
+  "transaction_changed_time": "2015-11-04T09:19:39Z",
+  "zett_code": null,
+  "contact_privacy_status": 1,
+  "expired_notification_status": 0,
+  "temporary_company_id": null,
+  "category_id": 16900,
+  "print_adobject_id": null,
+  "company_id": 21960,
+  "additional_companies": null,
+  "company": {
+    "id": 21960,
+    "data_table": "company",
+    "status": 1,
+    "admin_status": 1,
+    "category": "Firmaer/Eiendomsmeglere",
+    "title": "DNB Eiendom, Horten",
+    "short_description": "",
+    "publish_from_time": "2004-06-03T08:09:27Z",
+    "publish_to_time": null,
+    "system_created_time": "2004-06-03T08:09:27Z",
+    "created_by": "ImportEnginePersister",
+    "created_time": "2004-06-03T08:09:27Z",
+    "system_modified_time": "2015-10-05T14:59:41Z",
+    "modified_by": "ZettAdmin hege",
+    "modified_time": "2014-10-01T15:27:05Z",
+    "deleted_by": null,
+    "deleted_time": null,
+    "parent_id": 3162796,
+    "billing_company_id": null,
+    "address_id": 11814317,
+    "makereport": null,
+    "package_deal": 0,
+    "address": {
+      "address_id": 11814317,
+      "primary_address": "Apotekergaten 20",
+      "secondary_address": "",
+      "post_code": "3187",
+      "post_location": "Horten",
+      "geography": "Norge/Vestfold/Horten"
+    },
+    "contacts": [
+      {
+        "id": 56948113,
+        "name": "-",
+        "email": "horten@noreiendom.no",
+        "description": null,
+        "contact_fields": [
+          {
+            "id": 144016186,
+            "section": "DEFAULT",
+            "type": 1,
+            "label": "PHONE",
+            "position": 1,
+            "value": "33017666"
+          },
+          {
+            "id": 144016187,
+            "section": "DEFAULT",
+            "type": 8,
+            "label": "TITLE",
+            "position": 2,
+            "value": "-"
+          }
+        ]
+      }
+    ],
+    "fields": [
+      {
+        "id": 418506108,
+        "name": "mapclienturl",
+        "type": 2,
+        "position": 1,
+        "label": "URL til kartklient",
+        "value": "http://zett.gisline.no/ZettBrowser/map.aspx?x=6595191&y=243843&scale=20000&title=",
+        "object_id": 21960
+      },
+      {
+        "id": 418506109,
+        "name": "mappreviewurl",
+        "type": 2,
+        "position": 1,
+        "label": "URL til kart-preview",
+        "value": "http://www.webatlas.no/wms-location/?REQUEST=GetMap&SERVICE=WMS&LAYERS=N250_Hoydelag,N50_Arealdekke,N250_Vann,N50_Adm grenser,N50_Hoyde,N50_Samferdsel,N50_Bygg og anlegg,N50_Stedsnavn&SRS=EPSG:32633&BBOX=242593,6594191,245093,6596191&WIDTH=250&HEIGHT=200&FORMAT=image/png&",
+        "object_id": 21960
+      },
+      {
+        "id": 418506110,
+        "name": "homepage",
+        "type": 2,
+        "position": 1,
+        "label": "Hjemmeside",
+        "value": "http://www.dnbeiendom.no/Finn-Megler/Kontor/Vestfold/Horten/",
+        "object_id": 21960
+      },
+      {
+        "id": 418506111,
+        "name": "organization_number",
+        "type": 3,
+        "position": 1,
+        "label": "Org. nummer",
+        "value": "",
+        "object_id": 21960
+      },
+      {
+        "id": 418506112,
+        "name": "publications_for_real_estate_ads",
+        "type": 1,
+        "position": 1,
+        "label": "Publikasjoner tilhørende meglers eiendomsannonser",
+        "value": "www.tb.no,www.jarlsbergavis.no,www.op.no,www.gjengangeren.no,www.oyene.no,www.sb.no",
+        "object_id": 21960
+      },
+      {
+        "id": 418506113,
+        "name": "publications_for_holiday_home_ads",
+        "type": 1,
+        "position": 1,
+        "label": "Publikasjoner tilhørende meglers fritidseiendomsannonser",
+        "value": "www.tb.no,www.jarlsbergavis.no,www.op.no,www.gjengangeren.no,www.oyene.no,www.sb.no",
+        "object_id": 21960
+      },
+      {
+        "id": 418506114,
+        "name": "mapcoordinatex",
+        "type": 9,
+        "position": 1,
+        "label": "Kart-koordinat (X-akse)",
+        "value": "6595109.707699999",
+        "object_id": 21960
+      },
+      {
+        "id": 418506115,
+        "name": "mapcoordinatey",
+        "type": 9,
+        "position": 1,
+        "label": "Kart-koordinat (Y-akse)",
+        "value": "243776.9567999998",
+        "object_id": 21960
+      },
+      {
+        "id": 418506116,
+        "name": "mapresolvedaddress",
+        "type": 1,
+        "position": 1,
+        "label": "Adresse fra kartoppslag",
+        "value": "Apotekergaten 20, 3187 HORTEN",
+        "object_id": 21960
+      },
+      {
+        "id": 418506117,
+        "name": "mapcoordinatelon",
+        "type": 9,
+        "position": 1,
+        "label": "Kart-koordinat (Lengdegrader)",
+        "value": "10.483378623308353",
+        "object_id": 21960
+      },
+      {
+        "id": 418506118,
+        "name": "mapcoordinatelat",
+        "type": 9,
+        "position": 1,
+        "label": "Kart-koordinat (breddegrader)",
+        "value": "59.41629987945129",
+        "object_id": 21960
+      },
+      {
+        "id": 418506119,
+        "name": "geographyzones",
+        "type": 1,
+        "position": 1,
+        "label": "Geografiområder",
+        "value": "Norge/Vestfold/Horten",
+        "object_id": 21960
+      }
+    ],
+    "media": [
+      {
+        "id": 392526611,
+        "type": 2,
+        "position": 1,
+        "title": "Stor logo",
+        "description": null,
+        "reference": "ee/e3/eee34931ce67dbe6d17c147c13e8babc"
+      }
+    ],
+    "subcompanies": null
+  },
+  "address_id": 17879295,
+  "address": {
+    "address_id": null,
+    "primary_address": "Danakleven 5 D",
+    "secondary_address": null,
+    "post_code": "3111",
+    "post_location": "Tønsberg",
+    "geography": "Norge/Vestfold/Tønsberg"
+  },
+  "adObject_category": {
+    "category_id": 16900,
+    "name": "Tomannsbolig og Rekkehus",
+    "full_name": "Eiendom/Tomannsbolig og Rekkehus",
+    "type": "Tomannsbolig og Rekkehus",
+    "parent": 16000,
+    "link": null,
+    "deprecated": false,
+    "numbering": null
+  },
+  "adObject_categories": [],
+  "data_table": "ad",
+  "status": 1,
+  "admin_status": 1,
+  "category": "Eiendom/Tomannsbolig og Rekkehus",
+  "title": "Tønsberg sentrum - Moderne enebolig i rekke med fantastisk utsikt",
+  "short_description": null,
+  "publish_from_time": "2015-11-04T00:00:00Z",
+  "publish_to_time": "2016-05-02T00:00:00Z",
+  "system_created_time": "2015-11-04T09:19:39Z",
+  "created_by": "iadifestateforsale",
+  "created_time": "2015-11-04T09:19:39Z",
+  "system_modified_time": "2015-11-04T09:21:49Z",
+  "modified_by": "iadifestateforsale",
+  "modified_time": "2015-11-04T09:19:39Z",
+  "deleted_by": null,
+  "deleted_time": null,
+  "contacts": [
+    {
+      "id": null,
+      "name": "Vivian Wold",
+      "email": "Vivian.Wold@dnbeiendom.no",
+      "description": null,
+      "contact_fields": [
+        {
+          "id": null,
+          "section": "DEFAULT",
+          "type": 2,
+          "label": "MOBILE",
+          "position": 1,
+          "value": "40 05 26 10"
+        },
+        {
+          "id": null,
+          "section": "DEFAULT",
+          "type": 8,
+          "label": "TITLE",
+          "position": 2,
+          "value": "Eiendomsmegler"
+        },
+        {
+          "id": null,
+          "section": "DEFAULT",
+          "type": 14,
+          "label": "PHOTO",
+          "position": 3,
+          "value": "6e/cd/6ecd69aba33134ff47c03a33e554884c"
+        }
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "id": null,
+      "name": "text",
+      "type": 6,
+      "position": 1,
+      "label": "Innhold",
+      "value": "Spennende og moderne enebolig bestående av entrè med skyvedørsgarderobe, hall med trapperom samt utgang til lufteterrasse, åpen kjøkken og stueløsning, loftstue med utgang til takterrasse med panoramautsikt og utmerkede solforhold, 3 soverom og 2 bad. I tillegg disponerer boligen en bod ved inngangsparti, 2 boder på takterrasse samt 1 bod i garasjeanlegg.",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "saletype",
+      "type": 1,
+      "position": 1,
+      "label": "Selgertype",
+      "value": "Megler",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "mapcoordinatex",
+      "type": 9,
+      "position": 1,
+      "label": "Kart-koordinat (X-akse)",
+      "value": "6579169.642200001",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "mapcoordinatey",
+      "type": 9,
+      "position": 1,
+      "label": "Kart-koordinat (Y-akse)",
+      "value": "238291.0943",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "mapcoordinatelon",
+      "type": 9,
+      "position": 1,
+      "label": "Kart-koordinat (Lengdegrader)",
+      "value": "10.406381921130269",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "mapcoordinatelat",
+      "type": 9,
+      "position": 1,
+      "label": "Kart-koordinat (breddegrader)",
+      "value": "59.270242106439966",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "mapresolvedaddress",
+      "type": 1,
+      "position": 1,
+      "label": "Adresse fra kartoppslag",
+      "value": "Danakleven 5 D, 3111 TØNSBERG",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "geographyzones",
+      "type": 1,
+      "position": 1,
+      "label": "Geografiområder",
+      "value": "Norge/Vestfold/Tønsberg",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "text",
+      "type": 6,
+      "position": 2,
+      "label": "Standard",
+      "value": "Boligen har overbygget inngangsparti og man kommer inn i entrè med skyvedørsgarderobe. Denne har flis med varmekabler på gulv samt malte flater. Vel innenfor finner man eiendommens hall med stilfull trapp til 2.etasje. Her har man valgt parkett på gulv samt rene malte flater på vegg. Hallen har rom for et lite kontorareale eller en garderobeløsning dersom man har mer behov for det. Det er også utgang til usjenert lufteterrasse. <br /><br />I første etasje finner man også 2 store soverom med parkett på gulv. Det ene soverommet har fransk balking mens det andre har skyvedørsgarderobe. <br /><br />Soverommene ligger i tilknytning til boligens første bad der det er laget en flott dusjnisje samt montert badekar, stort servantskap samt toalett. Badet er flislagt med nøytrale farger og stilige løsninger, og det er selvsagt varmekabler. <br /><br />Vel oppe i 2.etasje åpner hele Tønsberg seg i de store vindusflatene med panoramautsikt. Den åpne løsningen gir gode samtaler og lange kvelder med matlaging med lysene fra Norges eldste by som bakteppe. Også her er det valgt en pen parkett på gulv samt rene malter flater på vegg.<br /><br />Kjøkkenet har en praktisk innredning som er holdt i nøytrale farger. Her er det også laget en kjøkkenøy for mer skap- og benkeplass. Her nyter man dagens første espresso mens man ser solen stå opp i øst. Ventilator er ny i 2015 og kjøleskap, komfyr og oppvaskmaskin medfølger. <br /><br />2.etasje rommer også boligens siste soverom samt et praktisk bad. Badet er flislagt med varmekabler, og har dusjhjørne, servant, toalett samt opplegg til vaskemaskin. <br /><br />Vel opp i 3.etasje finner man boligens absolutt fremste fortrinn; en loftstue med en av byens absolutt beste utsikter gjennom den langsgående vindusrekken. Det er utgang til den romslige takterrassen hvor man ser for seg at alle sommerens finværsdager tilbringes. <br /><br />Boligen har sentralstøvsuger samt flotte og dekorative spotskinner. Videre er det elektriske utvendige persienner på en del av vinduene.",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "text",
+      "type": 6,
+      "position": 3,
+      "label": "Beliggenhet",
+      "value": "Danakleven ligger i Tønsberg sentrum ved foten av ærverdige Slottsfjellet. Her har man gangavstand til det som utvilsomt er et av Tønsbergs flotteste rekreasjonsområder. Skulle man ønske seg en litt lengre tur legger man veien ned bakken mot Nordbyen der man etter en kort tur gjennom ærverdig bebyggelse finner turstiene som fører en gjennom Greveskogen og det flotte naturreservatet. I utkanten av Nordbyen finner man også den populære bystranda, der mange tilbringer late sommerdager. <br /><br />Fra boligen er det bokstavelig talt et steinkast til en populær sportspub, og man finner i tillegg alle Tønsberg sentrumsfasiliteter innenfor gangavstand. Kjøpesenter, hyggelige kafeer, anerkjente restauranter samt en usedvanlig hyggelig sentrumskjerne er alt en del av ditt nye nærmiljø. <br /><br />Til tross for sentrumsbeliggenhet slipper man å kjøre slalom gjennom tung kø for å komme til utfartsårene, for vel ute fra parkeringshuset som hører til boligen kan man velge å kjøre enten opp bakken eller ned bakken, for så å treffe rett på begge hovedveier inn- og ut av Tønsberg. Man når E18 på 5 minutter, og er således enkelt på vei til Oslo, Drammen eller noen av Vestfoldbyene. Togstasjonen i Tønsberg ligger en 5 minutters spasertur unna og herfra kommer man seg også på ekspressbussene om det er foretrukket transportmiddel.",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "ordersaledocument",
+      "type": 2,
+      "position": 4,
+      "label": "Be om salgsoppgave",
+      "value": "http://www.dnbeiendom.no/drombolig/templates/autoprospect____2531.aspx?source=amedia&objectid=60715188",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "bid",
+      "type": 2,
+      "position": 5,
+      "label": "Gi bud",
+      "value": "https://bud.dnbeiendom.no/60715188",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "municipalnumber",
+      "type": 3,
+      "position": 6,
+      "label": "Kommunenr",
+      "value": "704",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "holdingnumber",
+      "type": 3,
+      "position": 7,
+      "label": "Bruksnr.",
+      "value": "174",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "sectionnumber",
+      "type": 3,
+      "position": 8,
+      "label": "Seksjonsnr",
+      "value": "4",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "cadastralnumber",
+      "type": 3,
+      "position": 9,
+      "label": "Gårdsnr",
+      "value": "1001",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "bedrooms",
+      "type": 3,
+      "position": 10,
+      "label": "Antall soverom",
+      "value": "3",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "primaryroomarea",
+      "type": 8,
+      "position": 11,
+      "label": "Primær rom areal",
+      "value": "155",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "grossarea",
+      "type": 8,
+      "position": 12,
+      "label": "Bruttoareal BTA",
+      "value": "180",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "availablearea",
+      "type": 8,
+      "position": 13,
+      "label": "Bruksareal",
+      "value": "160",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "lotarea",
+      "type": 8,
+      "position": 14,
+      "label": "Tomteareal",
+      "value": "494",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "price",
+      "type": 4,
+      "position": 15,
+      "label": "Pris",
+      "value": "6000000",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "municipalexpences",
+      "type": 4,
+      "position": 16,
+      "label": "Kommunale avgifter",
+      "value": "10721",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "charges",
+      "type": 1,
+      "position": 17,
+      "label": "Omkostninger",
+      "value": "Dok.avg. til staten, 2.5%: kr 150.000,-\nTinglysning for hjemmelsdok.: kr 525,-\nTinglysning for pantedok.: kr 525,-\nAttestgebyr: kr 172,-\nTotalkostnad: kr 151.222,-",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "ownership",
+      "type": 1,
+      "position": 18,
+      "label": "Eieform",
+      "value": "Selveier",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "propertytype",
+      "type": 1,
+      "position": 19,
+      "label": "Eiendomstype",
+      "value": "Rekkehus",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "buildyear",
+      "type": 3,
+      "position": 20,
+      "label": "Byggeår",
+      "value": "2002",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "primaryroomcontains",
+      "type": 1,
+      "position": 21,
+      "label": "Primær rom beskrivelse",
+      "value": "P-rom er i følge taktsmann Anders Auen bestående av vindfang, 3 soverom, 2 bad, stue/kjøkken, gang og loftstue.",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "viewing",
+      "type": 1,
+      "position": 22,
+      "label": "Visning",
+      "value": "Visning annonseres på\ninternett (finn.no, eiendomsnett.no og dnbeiendom.no). Ta gjerne kontakt med megler for å avtale en privat visning.",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "text",
+      "type": 6,
+      "position": 23,
+      "label": "Oppvarming",
+      "value": "Boligen har elektrisk oppvarming gjennom varmekabler i entrè samt begge badeværelser, og termostatstyrte panelovner.",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "text",
+      "type": 6,
+      "position": 24,
+      "label": "Adkomst",
+      "value": "Se kartskisse for adkomst. Det er parkeringsplass nedenfor eiendommen, husk å legge nok på parkometeret til at du får sett både boligen og det nydelig området den ligger i.",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "text",
+      "type": 6,
+      "position": 25,
+      "label": "Tomten",
+      "value": "Tomten er felles i sameiet og hver seksjon disponerer arealet foran eget inngangsparti. Stort mer lettstelt enn dette blir det ikke!",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "text",
+      "type": 6,
+      "position": 26,
+      "label": "Parkering",
+      "value": "Man kan parkere ved inngangsparti i tillegg til at boligen disponerer 1 biloppstillingsplass i felles garasjeanlegg. Fellesutgifter i garasjeanlegg, som festavgift, lys og strøm, vedlikehold og renhold, fordeles likt på de 9 seksjonene som eier garasjeplass.",
+      "object_id": 3284864
+    },
+    {
+      "id": null,
+      "name": "videourl",
+      "type": 2,
+      "position": 27,
+      "label": "Supervisning",
+      "value": "http://www.dnbeiendom.no/templates/objectviewsuper.aspx?objectid=60715188",
+      "object_id": 3284864
+    }
+  ],
+  "media": [
+    {
+      "id": null,
+      "type": 1,
+      "position": 1,
+      "title": "",
+      "description": null,
+      "reference": "b9/98/b998cf53b17065bcda6ec819dbf816c9"
+    },
+    {
+      "id": null,
+      "type": 8,
+      "position": 1,
+      "title": "",
+      "description": null,
+      "reference": "6e/cd/6ecd69aba33134ff47c03a33e554884c"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 2,
+      "title": "Boligens hall med trapperom samt utgang til terrasse",
+      "description": null,
+      "reference": "ad/5e/ad5e50427a24058b6c0a02cc3bc573e7"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 3,
+      "title": "Parkett på gulv",
+      "description": null,
+      "reference": "df/4e/df4e24c74953fa00225b33a6a644ed24"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 4,
+      "title": "God plass til spisebord og større sofagruppe",
+      "description": null,
+      "reference": "a9/a9/a9a9fcb327614e1920880a34540e8f46"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 5,
+      "title": "Plass til romslig spisebord",
+      "description": null,
+      "reference": "79/f3/79f399ffe5b05c7efa570aaf7ffca8a8"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 6,
+      "title": "Panoramavinduer med full utsikt og intet innsyn",
+      "description": null,
+      "reference": "8e/f7/8ef71129aff33983bb9af3be703fd4f2"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 7,
+      "title": "Ny ventilator i 2015",
+      "description": null,
+      "reference": "55/a3/55a3fa8a0fe3aaa983d2099e755a2d34"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 8,
+      "title": "Mye skap og benke-plass",
+      "description": null,
+      "reference": "56/58/565833115f5b0f115f37f608002b2363"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 9,
+      "title": "Praktisk kjøkkenøy",
+      "description": null,
+      "reference": "e0/5a/e05a9c1a9e57b886050ba017cca7eaa1"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 10,
+      "title": "Pen innredning",
+      "description": null,
+      "reference": "6b/8e/6b8e338f59528b11fec57887aac09125"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 11,
+      "title": "Frokostplass",
+      "description": null,
+      "reference": "ef/41/ef4152a8219bfb76e626f5d7f79a3757"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 12,
+      "title": "Loftstuens lyse arealer",
+      "description": null,
+      "reference": "ef/7e/ef7e651263aeeb5a933cb8dbd8b1ef14"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 13,
+      "title": "Utgang til takterrasse fra loftstue",
+      "description": null,
+      "reference": "26/c2/26c2d4f2ac71ba828f551d6f7e2f414d"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 14,
+      "title": "Panorama",
+      "description": null,
+      "reference": "b3/ec/b3eca8da84f2e9bd5858c67b13d3439b"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 15,
+      "title": "Boligens takterrasse",
+      "description": null,
+      "reference": "9a/09/9a090d7cce745779d2ba1f1e3be8e162"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 16,
+      "title": "Domkirken, fjorden og herlige solforhold",
+      "description": null,
+      "reference": "94/ce/94ce4c0032773f1ebc946724c37dc3b8"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 17,
+      "title": "De lange sommerkveldene nytes greit her",
+      "description": null,
+      "reference": "74/58/7458248c64392ab9de00684bd1681221"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 18,
+      "title": "Frittliggende uten innsyn",
+      "description": null,
+      "reference": "98/0e/980e948dbf37beb94d4f7baf8bc80227"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 19,
+      "title": "Koselig boligområde ved foten av Slottsfjellet",
+      "description": null,
+      "reference": "07/0c/070cd30725610c1f432d0e16c878e08e"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 20,
+      "title": "Badekar og innredning på hovedbad",
+      "description": null,
+      "reference": "72/8d/728d1698778e3599c36f52b6e8f854ea"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 21,
+      "title": "Dusjnisje på hovedbad",
+      "description": null,
+      "reference": "d0/e1/d0e15845145fffb39303a26c1a197f3d"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 22,
+      "title": "Lekkert bad",
+      "description": null,
+      "reference": "1f/0a/1f0a3885c99bf2e1a20c6ed8c70e6cb0"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 23,
+      "title": "Dusjhjørne på bad i 2.etasje",
+      "description": null,
+      "reference": "19/6e/196e8ea7bdcb528e5964dd825e898f4a"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 24,
+      "title": "Soverom med skyvedørsgarderobe",
+      "description": null,
+      "reference": "9c/2a/9c2aef5f078d5bea67ccb89b49c6ffd3"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 25,
+      "title": "Soverom med fransk balkong",
+      "description": null,
+      "reference": "17/f8/17f8a5d47560af15c4927d0449012308"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 26,
+      "title": "Garderobe mot soverom",
+      "description": null,
+      "reference": "26/93/2693bbd0044f2cf5263434d3a87ac2d5"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 27,
+      "title": "Soverom i 2.etasje",
+      "description": null,
+      "reference": "b4/ee/b4eeec04e218634cc661fd416e6d556f"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 28,
+      "title": "Spennende townhouse i herlige omgivelser",
+      "description": null,
+      "reference": "d8/bd/d8bd655a42f742960677c597a1b35c1c"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 29,
+      "title": "Utsikten er upåklagelig",
+      "description": null,
+      "reference": "a9/47/a9473264f6e6ddb172569029218c04e0"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 30,
+      "title": "Koselig byutsikt",
+      "description": null,
+      "reference": "c5/9e/c59e80f8bb4aacc0ba7302a7b3dffd71"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 31,
+      "title": "Bare himmelen over",
+      "description": null,
+      "reference": "12/20/12208271217a11b457973cacc7191f09"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 32,
+      "title": "Romslig takterrasse",
+      "description": null,
+      "reference": "dd/c4/ddc4becb4e61ceb7d05a19399a7a2844"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 33,
+      "title": "Fredelig boligområde",
+      "description": null,
+      "reference": "10/8a/108a502df5a4014b789dd88f78e36fe3"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 34,
+      "title": "Nydelig byutsikt",
+      "description": null,
+      "reference": "8e/02/8e02371ec4d3fbd4e163effe87ba8038"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 35,
+      "title": "Tønsberg for dine føtter",
+      "description": null,
+      "reference": "29/db/29dbb391ab75448408c66286feb660bb"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 36,
+      "title": "",
+      "description": null,
+      "reference": "a7/09/a709a193fd2bb4184e530743ddb289d5"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 37,
+      "title": "",
+      "description": null,
+      "reference": "b7/6d/b76dd08c3775d185550b2068242b31f8"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 38,
+      "title": "",
+      "description": null,
+      "reference": "52/6d/526da2fc94ec71c2aef16be682ff3adc"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 39,
+      "title": "Romslig stue og kjøkken-løsning",
+      "description": null,
+      "reference": "ea/c6/eac6376f191845ee591399ccde8e3f59"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 40,
+      "title": "",
+      "description": null,
+      "reference": "ad/13/ad13601fc6034a6da4c663f9f3a65eeb"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 41,
+      "title": "",
+      "description": null,
+      "reference": "7d/22/7d2219701599863a9b8ecc9207f4d539"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 42,
+      "title": "",
+      "description": null,
+      "reference": "eb/1d/eb1df76e6f4b8ea77173484069b25c9a"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 43,
+      "title": "",
+      "description": null,
+      "reference": "2c/ed/2ced8b7e5192e3397d4e91496e406d7d"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 44,
+      "title": "",
+      "description": null,
+      "reference": "c6/f6/c6f646f7883cad423077f8b914294bff"
+    },
+    {
+      "id": null,
+      "type": 1,
+      "position": 45,
+      "title": "",
+      "description": null,
+      "reference": "7b/ab/7bab44525257cfd1435909fcb7986913"
+    }
+  ],
+  "extref": [
+    {
+      "externalReferenceId": null,
+      "objectId": null,
+      "typeValue": 1,
+      "system": "iadifestateforsale",
+      "systemVersion": "2.18",
+      "source": "21960",
+      "reference": "#ext_ref"
+    }
+  ],
+  "bookings": [
+    {
+      "date_from": "2015-11-04T00:00:00Z",
+      "date_to": "2016-05-02T00:00:00Z",
+      "product": "prospectus",
+      "publications": [
+        "www.op.no",
+        "www.sb.no",
+        "www.jarlsbergavis.no",
+        "www.tb.no",
+        "www.gjengangeren.no",
+        "www.oyene.no"
+      ],
+      "ext_booking_id": null
+    }
+  ],
+  "is_commercial": true
+}

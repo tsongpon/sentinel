@@ -1,0 +1,169 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://jsonschema.net",
+  "type": "object",
+  "properties": {
+    "id": {
+      "id": "http://jsonschema.net/id",
+      "type": "integer"
+    },
+    "transaction_type": {
+      "id": "http://jsonschema.net/transaction_type",
+      "type": "integer"
+    },
+    "transaction_status": {
+      "id": "http://jsonschema.net/transaction_status",
+      "type": "integer"
+    },
+    "zett_code": {
+      "id": "http://jsonschema.net/zett_code",
+      "type": "string"
+    },
+    "category_id": {
+      "id": "http://jsonschema.net/category_id",
+      "type": "integer"
+    },
+    "company_id": {
+      "id": "http://jsonschema.net/company_id",
+      "type": "integer"
+    },
+    "additional_companies": {
+      "id": "http://jsonschema.net/additional_companies",
+      "type": "null"
+    },
+    "company": {
+      "id": "http://jsonschema.net/company",
+      "type": "object"
+    },
+    "address_id": {
+      "id": "http://jsonschema.net/address_id",
+      "type": "integer"
+    },
+    "address": {
+      "id": "http://jsonschema.net/address",
+      "type": "object"
+    },
+    "adObject_category": {
+      "id": "http://jsonschema.net/adObject_category",
+      "type": "object"
+    },
+    "adObject_categories": {
+      "id": "http://jsonschema.net/adObject_categories",
+      "type": "array"
+    },
+    "data_table": {
+      "id": "http://jsonschema.net/data_table",
+      "type": "string"
+    },
+    "status": {
+      "id": "http://jsonschema.net/status",
+      "type": "integer"
+    },
+    "admin_status": {
+      "id": "http://jsonschema.net/admin_status",
+      "type": "integer"
+    },
+    "category": {
+      "id": "http://jsonschema.net/category",
+      "type": "string"
+    },
+    "title": {
+      "id": "http://jsonschema.net/title",
+      "type": "string"
+    },
+    "publish_from_time": {
+      "id": "http://jsonschema.net/publish_from_time",
+      "type": "string"
+    },
+    "publish_to_time": {
+      "id": "http://jsonschema.net/publish_to_time",
+      "type": "string"
+    },
+    "system_created_time": {
+      "id": "http://jsonschema.net/system_created_time",
+      "type": "string"
+    },
+    "created_by": {
+      "id": "http://jsonschema.net/created_by",
+      "type": "string"
+    },
+    "created_time": {
+      "id": "http://jsonschema.net/created_time",
+      "type": "string"
+    },
+    "system_modified_time": {
+      "id": "http://jsonschema.net/system_modified_time",
+      "type": "string"
+    },
+    "modified_by": {
+      "id": "http://jsonschema.net/modified_by",
+      "type": "string"
+    },
+    "modified_time": {
+      "id": "http://jsonschema.net/modified_time",
+      "type": "string"
+    },
+    "deleted_by": {
+      "id": "http://jsonschema.net/deleted_by",
+      "type": "null"
+    },
+    "deleted_time": {
+      "id": "http://jsonschema.net/deleted_time",
+      "type": "null"
+    },
+    "contacts": {
+      "id": "http://jsonschema.net/contacts",
+      "type": "array",
+      "items": {
+        "id": "http://jsonschema.net/contacts/0",
+        "type": "object"
+      }
+    },
+    "fields": {
+      "id": "http://jsonschema.net/fields",
+      "type": "array"
+    },
+    "media": {
+      "id": "http://jsonschema.net/media",
+      "type": "array"
+    },
+    "extref": {
+      "id": "http://jsonschema.net/extref",
+      "type": "array"
+    },
+    "bookings": {
+      "id": "http://jsonschema.net/bookings",
+      "type": "array",
+      "items": {
+        "id": "http://jsonschema.net/bookings/0",
+        "type": "object",
+        "properties": {
+          "date_from": {
+            "id": "http://jsonschema.net/bookings/0/date_from",
+            "type": "string"
+          },
+          "date_to": {
+            "id": "http://jsonschema.net/bookings/0/date_to",
+            "type": "string"
+          },
+          "product": {
+            "id": "http://jsonschema.net/bookings/0/product",
+            "type": "string"
+          },
+          "publications": {
+            "id": "http://jsonschema.net/bookings/0/publications",
+            "type": "array"
+          },
+          "ext_booking_id": {
+            "id": "http://jsonschema.net/bookings/0/ext_booking_id",
+            "type": "null"
+          }
+        }
+      }
+    },
+    "is_commercial": {
+      "id": "http://jsonschema.net/is_commercial",
+      "type": "boolean"
+    }
+  }
+}
