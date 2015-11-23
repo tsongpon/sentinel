@@ -88,6 +88,9 @@ public class CalssifiedIntegrationTest {
                 .body("_source.attributes.buildyear", equalTo(2002))
                 .body("_source.attributes.saletype", equalTo("Megler"))
                 .body("_source.attributes.availablearea", equalTo(160))
-                .body("_source.company_id", equalTo(Integer.parseInt("21960")));
+                .body("_source.company_id", equalTo(Integer.parseInt("21960")))
+                .body("_source.bookings[0].product", equalTo("prospectus"))
+                .body("_source.bookings[0].publications", hasItems("www.tb.no"))
+                .body("_source.bookings[0].publications", hasItems("www.sb.no"));
     }
 }
