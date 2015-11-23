@@ -25,7 +25,7 @@ public class FrontierAPIVersion2IntegrationTest {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(FrontierAPIVersion2IntegrationTest.class);
 
-    private static final String VERSION1 = "v2";
+    private static final String VERSION2 = "v2";
     private static final String SEPARATOR = "/";
     private static final String FRONTIER_API_KEY = "bearer a2be9ff0-3e07-4e1a-b137-08d6f65cf9ac";
 
@@ -46,7 +46,7 @@ public class FrontierAPIVersion2IntegrationTest {
         newAdASJson = newAdASJson.replace("#ext_ref", Long.toString(LocalDateTime.now().toInstant(ZoneOffset.UTC).toEpochMilli()));
 
         Response response = given().body(newAdASJson).contentType(ContentType.JSON).when().
-                post(Service.FRONTIER.serviceAddress() + SEPARATOR + VERSION1 + SEPARATOR + "ads");
+                post(Service.FRONTIER.serviceAddress() + SEPARATOR + VERSION2 + SEPARATOR + "ads");
 
         response.then().statusCode(401);
     }
@@ -58,7 +58,7 @@ public class FrontierAPIVersion2IntegrationTest {
         newAdASJson = newAdASJson.replace("#ext_ref", Long.toString(LocalDateTime.now().toInstant(ZoneOffset.UTC).toEpochMilli()));
 
         Response response = given().body(newAdASJson).contentType(ContentType.JSON).when().
-                put(Service.FRONTIER.serviceAddress() + SEPARATOR + VERSION1 + SEPARATOR + "ads");
+                put(Service.FRONTIER.serviceAddress() + SEPARATOR + VERSION2 + SEPARATOR + "ads" + SEPARATOR + "1234");
 
         response.then().statusCode(401);
     }
@@ -72,7 +72,7 @@ public class FrontierAPIVersion2IntegrationTest {
         Response response = given().body(newAdASJson).contentType(ContentType.JSON)
                 .header("Authorization", FRONTIER_API_KEY)
                 .when()
-                .post(Service.FRONTIER.serviceAddress() + SEPARATOR + VERSION1 + SEPARATOR + "ads");
+                .post(Service.FRONTIER.serviceAddress() + SEPARATOR + VERSION2 + SEPARATOR + "ads");
 
         response.then().statusCode(201);
         String newAdLocation = response.getHeader("Location");
@@ -105,11 +105,11 @@ public class FrontierAPIVersion2IntegrationTest {
         Response putResponse = given().body(modifiedAd).contentType(ContentType.JSON)
                 .header("Authorization", FRONTIER_API_KEY)
                 .when().
-                put(Service.FRONTIER.serviceAddress() + SEPARATOR + VERSION1 + SEPARATOR + "ads" + SEPARATOR + adId);
+                put(Service.FRONTIER.serviceAddress() + SEPARATOR + VERSION2 + SEPARATOR + "ads" + SEPARATOR + adId);
 
         putResponse.then().statusCode(200);
 
-        get(Service.FRONTIER.serviceAddress() + SEPARATOR + VERSION1 + SEPARATOR + "ads" + SEPARATOR + adId)
+        get(Service.FRONTIER.serviceAddress() + SEPARATOR + VERSION2 + SEPARATOR + "ads" + SEPARATOR + adId)
                 .then().statusCode(200).contentType(ContentType.JSON)
                 .body(matchesJsonSchemaInClasspath("ads/ad_jsonschema.json"))
                 .body("title", equalTo(newTitle))
@@ -124,7 +124,7 @@ public class FrontierAPIVersion2IntegrationTest {
                 .body("bookings[0].publications", hasItems("www.tb.no"));
 
         given().param("adid", adId).when()
-                .get(Service.FRONTIER.serviceAddress() + SEPARATOR + VERSION1 + SEPARATOR + "ads")
+                .get(Service.FRONTIER.serviceAddress() + SEPARATOR + VERSION2 + SEPARATOR + "ads")
                 .then().statusCode(200).body("total", equalTo(1));
     }
 
@@ -140,7 +140,7 @@ public class FrontierAPIVersion2IntegrationTest {
                 .param("publishperiodfrom", "2015-10-17T16:46:01Z")
                 .param("publishperiodto", "2015-11-17T16:46:01Z")
                 .when()
-                .get(Service.FRONTIER.serviceAddress() + SEPARATOR + VERSION1 + SEPARATOR + "ads")
+                .get(Service.FRONTIER.serviceAddress() + SEPARATOR + VERSION2 + SEPARATOR + "ads")
                 .then().statusCode(200).contentType(ContentType.JSON);
     }
 }
