@@ -22,14 +22,15 @@ import static org.hamcrest.Matchers.*;
 /**
  *
  */
-public class CalssifiedIntegrationTest {
+public class ClassifiedIntegrationTest {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(CalssifiedIntegrationTest.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(ClassifiedIntegrationTest.class);
 
     private static final String FRONTIER_VERSION2 = "v2";
     private static final String PIPEK_VERSION1 = "v1";
     private static final String SEPARATOR = "/";
     private static final String FRONTIER_API_KEY = "bearer a2be9ff0-3e07-4e1a-b137-08d6f65cf9ac";
+    private static final int TIME_WAIT = 3;
 
     @Test
     public void testPingFrontier() throws Exception {
@@ -71,8 +72,10 @@ public class CalssifiedIntegrationTest {
 
         String adId = newAdLocation.split("/")[7];
 
-        Thread.sleep(TimeUnit.MINUTES.toMillis(3));
+        LOGGER.info("Wait to ad index on ES for {} minutes", TIME_WAIT);
+        Thread.sleep(TimeUnit.MINUTES.toMillis(TIME_WAIT));
 
+        LOGGER.info("Checking ad on pipek");
         get(Service.PIPEK.serviceAddress() + SEPARATOR + PIPEK_VERSION1 + SEPARATOR + "ads" + SEPARATOR + adId)
                 .then().statusCode(200).contentType(ContentType.JSON)
                 .body(matchesJsonSchemaInClasspath("ads/ad_pipek_jsonschema.json"))
