@@ -21,12 +21,13 @@ import static org.hamcrest.Matchers.*;
 /**
  *
  */
-public class FrontierAPIVersion1IntegrationTest {
+public class FrontierAPIVersion2IntegrationTest {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(FrontierAPIVersion1IntegrationTest.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(FrontierAPIVersion2IntegrationTest.class);
 
-    private static final String VERSION1 = "v1";
+    private static final String VERSION1 = "v2";
     private static final String SEPARATOR = "/";
+    private static final String FRONTIER_API_KEY = "bearer a2be9ff0-3e07-4e1a-b137-08d6f65cf9ac_";
 
     @Test
     public void testPingFrontier() throws Exception {
@@ -39,13 +40,39 @@ public class FrontierAPIVersion1IntegrationTest {
     }
 
     @Test
-    public void testAdEndpoint() throws Exception {
+    public void createAdWithNoAuthen() throws Exception {
         URL url = Resources.getResource("ads/newAd.json");
         String newAdASJson = Resources.toString(url, Charsets.UTF_8);
         newAdASJson = newAdASJson.replace("#ext_ref", Long.toString(LocalDateTime.now().toInstant(ZoneOffset.UTC).toEpochMilli()));
 
         Response response = given().body(newAdASJson).contentType(ContentType.JSON).when().
                 post(Service.FRONTIER.serviceAddress() + SEPARATOR + VERSION1 + SEPARATOR + "ads");
+
+        response.then().statusCode(401);
+    }
+
+    @Test
+    public void updateAdWithNoAuthen() throws Exception {
+        URL url = Resources.getResource("ads/newAd.json");
+        String newAdASJson = Resources.toString(url, Charsets.UTF_8);
+        newAdASJson = newAdASJson.replace("#ext_ref", Long.toString(LocalDateTime.now().toInstant(ZoneOffset.UTC).toEpochMilli()));
+
+        Response response = given().body(newAdASJson).contentType(ContentType.JSON).when().
+                put(Service.FRONTIER.serviceAddress() + SEPARATOR + VERSION1 + SEPARATOR + "ads");
+
+        response.then().statusCode(401);
+    }
+
+    @Test
+    public void testAdEndpoint() throws Exception {
+        URL url = Resources.getResource("ads/newAd.json");
+        String newAdASJson = Resources.toString(url, Charsets.UTF_8);
+        newAdASJson = newAdASJson.replace("#ext_ref", Long.toString(LocalDateTime.now().toInstant(ZoneOffset.UTC).toEpochMilli()));
+
+        Response response = given().body(newAdASJson).contentType(ContentType.JSON)
+                .header("Authorization", FRONTIER_API_KEY)
+                .when()
+                .post(Service.FRONTIER.serviceAddress() + SEPARATOR + VERSION1 + SEPARATOR + "ads");
 
         response.then().statusCode(201);
         String newAdLocation = response.getHeader("Location");
@@ -75,7 +102,9 @@ public class FrontierAPIVersion1IntegrationTest {
         String newTitle = "This is new title at " + LocalDateTime.now().toString();
         String modifiedAd = newAdASJson.replace("Tønsberg sentrum - Moderne enebolig i rekke med fantastisk utsikt", newTitle);
 
-        Response putResponse = given().body(modifiedAd).contentType(ContentType.JSON).when().
+        Response putResponse = given().body(modifiedAd).contentType(ContentType.JSON)
+                .header("Authorization", FRONTIER_API_KEY)
+                .when().
                 put(Service.FRONTIER.serviceAddress() + SEPARATOR + VERSION1 + SEPARATOR + "ads" + SEPARATOR + adId);
 
         putResponse.then().statusCode(200);
@@ -107,6 +136,9 @@ public class FrontierAPIVersion1IntegrationTest {
                 .param("category", "Eiendom")
                 .param("modifiedtimefrom", "2015-01-17T16:46:01Z")
                 .param("modifiedtimeto", "2015-11-17T16:46:01Z")
+                .param("modifiedtimeto", "2015-11-17T16:46:01Z")
+                .param("publishperiodfrom", "2015-10-17T16:46:01Z")
+                .param("publishperiodto", "2015-11-17T16:46:01Z")
                 .when()
                 .get(Service.FRONTIER.serviceAddress() + SEPARATOR + VERSION1 + SEPARATOR + "ads")
                 .then().statusCode(200).contentType(ContentType.JSON);
