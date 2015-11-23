@@ -27,7 +27,7 @@ public class FrontierAPIVersion2IntegrationTest {
 
     private static final String VERSION1 = "v2";
     private static final String SEPARATOR = "/";
-    private static final String FRONTIER_API_KEY = "bearer a2be9ff0-3e07-4e1a-b137-08d6f65cf9ac_";
+    private static final String FRONTIER_API_KEY = "bearer a2be9ff0-3e07-4e1a-b137-08d6f65cf9ac";
 
     @Test
     public void testPingFrontier() throws Exception {
