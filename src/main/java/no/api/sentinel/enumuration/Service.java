@@ -4,8 +4,8 @@ package no.api.sentinel.enumuration;
  *
  */
 public enum Service {
-    FRONTIER("http://bearing.dev.abctech-thailand.com/api/frontier", "http://bearing.dev.abctech-thailand.com/frontier/apiadmin/ping"),
-    PRIMUS("http://bearing.dev.abctech-thailand.com/api/primusr", "http://bearing.dev.abctech-thailand.com/primus/apiadmin/ping"),
+    FRONTIER("http://bearing:9079/api/frontier", "http://bearing:9079/frontier/apiadmin/ping"),
+    PRIMUS("http://bearing.dev.abctech-thailand.com/api/primus", "http://bearing.dev.abctech-thailand.com/primus/apiadmin/ping"),
     ELASTICSEARCH("http://bearing:9200", "http://bearing:9200"),
     PIPEK("http://bearing.dev.abctech-thailand.com/api/pipek", "http://bearing.dev.abctech-thailand.com/pipek/apiadmin/ping");
 
