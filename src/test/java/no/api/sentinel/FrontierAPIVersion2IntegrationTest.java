@@ -136,7 +136,6 @@ public class FrontierAPIVersion2IntegrationTest {
                 .param("category", "Eiendom")
                 .param("modifiedtimefrom", "2015-01-17T16:46:01Z")
                 .param("modifiedtimeto", "2015-11-17T16:46:01Z")
-                .param("modifiedtimeto", "2015-11-17T16:46:01Z")
                 .param("publishperiodfrom", "2015-10-17T16:46:01Z")
                 .param("publishperiodto", "2015-11-17T16:46:01Z")
                 .when()
