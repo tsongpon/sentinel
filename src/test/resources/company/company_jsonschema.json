@@ -1,0 +1,495 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://jsonschema.net",
+  "type": "object",
+  "properties": {
+    "id": {
+      "id": "http://jsonschema.net/id",
+      "type": "integer"
+    },
+    "data_table": {
+      "id": "http://jsonschema.net/data_table",
+      "type": "string"
+    },
+    "status": {
+      "id": "http://jsonschema.net/status",
+      "type": "integer"
+    },
+    "admin_status": {
+      "id": "http://jsonschema.net/admin_status",
+      "type": "integer"
+    },
+    "category": {
+      "id": "http://jsonschema.net/category",
+      "type": "string"
+    },
+    "title": {
+      "id": "http://jsonschema.net/title",
+      "type": "string"
+    },
+    "short_description": {
+      "id": "http://jsonschema.net/short_description",
+      "type": ["string", "null"]
+    },
+    "publish_from_time": {
+      "id": "http://jsonschema.net/publish_from_time",
+      "type": "string"
+    },
+    "publish_to_time": {
+      "id": "http://jsonschema.net/publish_to_time",
+      "type": ["string", "null"]
+    },
+    "system_created_time": {
+      "id": "http://jsonschema.net/system_created_time",
+      "type": "string"
+    },
+    "created_by": {
+      "id": "http://jsonschema.net/created_by",
+      "type": "string"
+    },
+    "created_time": {
+      "id": "http://jsonschema.net/created_time",
+      "type": "string"
+    },
+    "system_modified_time": {
+      "id": "http://jsonschema.net/system_modified_time",
+      "type": "string"
+    },
+    "modified_by": {
+      "id": "http://jsonschema.net/modified_by",
+      "type": "string"
+    },
+    "modified_time": {
+      "id": "http://jsonschema.net/modified_time",
+      "type": "string"
+    },
+    "deleted_by": {
+      "id": "http://jsonschema.net/deleted_by",
+      "type": "null"
+    },
+    "deleted_time": {
+      "id": "http://jsonschema.net/deleted_time",
+      "type": ["string", "null"]
+    },
+    "parent_id": {
+      "id": "http://jsonschema.net/parent_id",
+      "type": ["integer", "null"]
+    },
+    "address_id": {
+      "id": "http://jsonschema.net/address_id",
+      "type": "integer"
+    },
+    "address": {
+      "id": "http://jsonschema.net/address",
+      "type": "object",
+      "properties": {
+        "address_id": {
+          "id": "http://jsonschema.net/address/address_id",
+          "type": "integer"
+        },
+        "primary_address": {
+          "id": "http://jsonschema.net/address/primary_address",
+          "type": "string"
+        },
+        "secondary_address": {
+          "id": "http://jsonschema.net/address/secondary_address",
+          "type": "string"
+        },
+        "post_code": {
+          "id": "http://jsonschema.net/address/post_code",
+          "type": "string"
+        },
+        "post_location": {
+          "id": "http://jsonschema.net/address/post_location",
+          "type": "string"
+        },
+        "geography": {
+          "id": "http://jsonschema.net/address/geography",
+          "type": "string"
+        }
+      }
+    },
+    "contacts": {
+      "id": "http://jsonschema.net/contacts",
+      "type": "array",
+      "items": {
+        "id": "http://jsonschema.net/contacts/0",
+        "type": "object",
+        "properties": {
+          "id": {
+            "id": "http://jsonschema.net/contacts/0/id",
+            "type": "integer"
+          },
+          "name": {
+            "id": "http://jsonschema.net/contacts/0/name",
+            "type": ["string", "null"]
+          },
+          "email": {
+            "id": "http://jsonschema.net/contacts/0/email",
+            "type": "string"
+          },
+          "description": {
+            "id": "http://jsonschema.net/contacts/0/description",
+            "type": ["string", "null"]
+          },
+          "contact_fields": {
+            "id": "http://jsonschema.net/contacts/0/contact_fields",
+            "type": "array",
+            "items": {
+              "id": "http://jsonschema.net/contacts/0/contact_fields/0",
+              "type": "object",
+              "properties": {
+                "id": {
+                  "id": "http://jsonschema.net/contacts/0/contact_fields/0/id",
+                  "type": "integer"
+                },
+                "section": {
+                  "id": "http://jsonschema.net/contacts/0/contact_fields/0/section",
+                  "type": "string"
+                },
+                "type": {
+                  "id": "http://jsonschema.net/contacts/0/contact_fields/0/type",
+                  "type": "integer"
+                },
+                "label": {
+                  "id": "http://jsonschema.net/contacts/0/contact_fields/0/label",
+                  "type": "string"
+                },
+                "position": {
+                  "id": "http://jsonschema.net/contacts/0/contact_fields/0/position",
+                  "type": "integer"
+                },
+                "value": {
+                  "id": "http://jsonschema.net/contacts/0/contact_fields/0/value",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "fields": {
+      "id": "http://jsonschema.net/fields",
+      "type": "array",
+      "items": [
+        {
+          "id": "http://jsonschema.net/fields/0",
+          "type": "object",
+          "properties": {
+            "id": {
+              "id": "http://jsonschema.net/fields/0/id",
+              "type": "integer"
+            },
+            "name": {
+              "id": "http://jsonschema.net/fields/0/name",
+              "type": ["string", "null"]
+            },
+            "type": {
+              "id": "http://jsonschema.net/fields/0/type",
+              "type": "integer"
+            },
+            "position": {
+              "id": "http://jsonschema.net/fields/0/position",
+              "type": "integer"
+            },
+            "label": {
+              "id": "http://jsonschema.net/fields/0/label",
+              "type": "string"
+            },
+            "value": {
+              "id": "http://jsonschema.net/fields/0/value",
+              "type": "string"
+            },
+            "object_id": {
+              "id": "http://jsonschema.net/fields/0/object_id",
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "id": "http://jsonschema.net/fields/1",
+          "type": "object",
+          "properties": {
+            "id": {
+              "id": "http://jsonschema.net/fields/1/id",
+              "type": "integer"
+            },
+            "name": {
+              "id": "http://jsonschema.net/fields/1/name",
+              "type": "string"
+            },
+            "type": {
+              "id": "http://jsonschema.net/fields/1/type",
+              "type": "integer"
+            },
+            "position": {
+              "id": "http://jsonschema.net/fields/1/position",
+              "type": "integer"
+            },
+            "label": {
+              "id": "http://jsonschema.net/fields/1/label",
+              "type": "string"
+            },
+            "value": {
+              "id": "http://jsonschema.net/fields/1/value",
+              "type": "string"
+            },
+            "object_id": {
+              "id": "http://jsonschema.net/fields/1/object_id",
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "id": "http://jsonschema.net/fields/2",
+          "type": "object",
+          "properties": {
+            "id": {
+              "id": "http://jsonschema.net/fields/2/id",
+              "type": "integer"
+            },
+            "name": {
+              "id": "http://jsonschema.net/fields/2/name",
+              "type": "string"
+            },
+            "type": {
+              "id": "http://jsonschema.net/fields/2/type",
+              "type": "integer"
+            },
+            "position": {
+              "id": "http://jsonschema.net/fields/2/position",
+              "type": "integer"
+            },
+            "label": {
+              "id": "http://jsonschema.net/fields/2/label",
+              "type": "string"
+            },
+            "value": {
+              "id": "http://jsonschema.net/fields/2/value",
+              "type": "string"
+            },
+            "object_id": {
+              "id": "http://jsonschema.net/fields/2/object_id",
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "id": "http://jsonschema.net/fields/3",
+          "type": "object",
+          "properties": {
+            "id": {
+              "id": "http://jsonschema.net/fields/3/id",
+              "type": "integer"
+            },
+            "name": {
+              "id": "http://jsonschema.net/fields/3/name",
+              "type": "string"
+            },
+            "type": {
+              "id": "http://jsonschema.net/fields/3/type",
+              "type": "integer"
+            },
+            "position": {
+              "id": "http://jsonschema.net/fields/3/position",
+              "type": "integer"
+            },
+            "label": {
+              "id": "http://jsonschema.net/fields/3/label",
+              "type": "string"
+            },
+            "value": {
+              "id": "http://jsonschema.net/fields/3/value",
+              "type": "string"
+            },
+            "object_id": {
+              "id": "http://jsonschema.net/fields/3/object_id",
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "id": "http://jsonschema.net/fields/4",
+          "type": "object",
+          "properties": {
+            "id": {
+              "id": "http://jsonschema.net/fields/4/id",
+              "type": "integer"
+            },
+            "name": {
+              "id": "http://jsonschema.net/fields/4/name",
+              "type": "string"
+            },
+            "type": {
+              "id": "http://jsonschema.net/fields/4/type",
+              "type": "integer"
+            },
+            "position": {
+              "id": "http://jsonschema.net/fields/4/position",
+              "type": "integer"
+            },
+            "label": {
+              "id": "http://jsonschema.net/fields/4/label",
+              "type": "string"
+            },
+            "value": {
+              "id": "http://jsonschema.net/fields/4/value",
+              "type": "string"
+            },
+            "object_id": {
+              "id": "http://jsonschema.net/fields/4/object_id",
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "id": "http://jsonschema.net/fields/5",
+          "type": "object",
+          "properties": {
+            "id": {
+              "id": "http://jsonschema.net/fields/5/id",
+              "type": "integer"
+            },
+            "name": {
+              "id": "http://jsonschema.net/fields/5/name",
+              "type": "string"
+            },
+            "type": {
+              "id": "http://jsonschema.net/fields/5/type",
+              "type": "integer"
+            },
+            "position": {
+              "id": "http://jsonschema.net/fields/5/position",
+              "type": "integer"
+            },
+            "label": {
+              "id": "http://jsonschema.net/fields/5/label",
+              "type": "string"
+            },
+            "value": {
+              "id": "http://jsonschema.net/fields/5/value",
+              "type": "string"
+            },
+            "object_id": {
+              "id": "http://jsonschema.net/fields/5/object_id",
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "id": "http://jsonschema.net/fields/6",
+          "type": "object",
+          "properties": {
+            "id": {
+              "id": "http://jsonschema.net/fields/6/id",
+              "type": "integer"
+            },
+            "name": {
+              "id": "http://jsonschema.net/fields/6/name",
+              "type": "string"
+            },
+            "type": {
+              "id": "http://jsonschema.net/fields/6/type",
+              "type": "integer"
+            },
+            "position": {
+              "id": "http://jsonschema.net/fields/6/position",
+              "type": "integer"
+            },
+            "label": {
+              "id": "http://jsonschema.net/fields/6/label",
+              "type": "string"
+            },
+            "value": {
+              "id": "http://jsonschema.net/fields/6/value",
+              "type": "string"
+            },
+            "object_id": {
+              "id": "http://jsonschema.net/fields/6/object_id",
+              "type": "integer"
+            }
+          }
+        },
+        {
+          "id": "http://jsonschema.net/fields/7",
+          "type": "object",
+          "properties": {
+            "id": {
+              "id": "http://jsonschema.net/fields/7/id",
+              "type": "integer"
+            },
+            "name": {
+              "id": "http://jsonschema.net/fields/7/name",
+              "type": "string"
+            },
+            "type": {
+              "id": "http://jsonschema.net/fields/7/type",
+              "type": "integer"
+            },
+            "position": {
+              "id": "http://jsonschema.net/fields/7/position",
+              "type": "integer"
+            },
+            "label": {
+              "id": "http://jsonschema.net/fields/7/label",
+              "type": "string"
+            },
+            "value": {
+              "id": "http://jsonschema.net/fields/7/value",
+              "type": "string"
+            },
+            "object_id": {
+              "id": "http://jsonschema.net/fields/7/object_id",
+              "type": "integer"
+            }
+          }
+        }
+      ]
+    },
+    "media": {
+      "id": "http://jsonschema.net/media",
+      "type": "array",
+      "items": {
+        "id": "http://jsonschema.net/media/0",
+        "type": "object",
+        "properties": {
+          "id": {
+            "id": "http://jsonschema.net/media/0/id",
+            "type": ["null", "integer"]
+          },
+          "type": {
+            "id": "http://jsonschema.net/media/0/type",
+            "type": "integer"
+          },
+          "position": {
+            "id": "http://jsonschema.net/media/0/position",
+            "type": "integer"
+          },
+          "title": {
+            "id": "http://jsonschema.net/media/0/title",
+            "type": "string"
+          },
+          "description": {
+            "id": "http://jsonschema.net/media/0/description",
+            "type": "null"
+          },
+          "reference": {
+            "id": "http://jsonschema.net/media/0/reference",
+            "type": "string"
+          }
+        }
+      }
+    },
+    "subcompanies": {
+      "id": "http://jsonschema.net/subcompanies",
+      "type": "null"
+    }
+  },
+  "required": [
+    "id",
+    "status",
+    "category",
+    "title"
+  ]
+}

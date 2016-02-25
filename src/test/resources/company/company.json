@@ -1,0 +1,135 @@
+{
+  "id": null,
+  "data_table": "company",
+  "status": 0,
+  "admin_status": 1,
+  "category": "Firmaer/Eiendomsmeglere",
+  "title": "Dnb NOR Eiendom Asker",
+  "short_description": null,
+  "publish_from_time": "2004-11-23T17:06:29Z",
+  "publish_to_time": null,
+  "system_created_time": "2004-11-23T17:06:29Z",
+  "created_by": "ImportEnginePersister",
+  "created_time": "2004-11-23T17:06:29Z",
+  "system_modified_time": "2011-08-29T16:48:55Z",
+  "modified_by": "ZettAdmin line",
+  "modified_time": "2010-11-25T09:27:51Z",
+  "deleted_by": null,
+  "deleted_time": null,
+  "parent_id": null,
+  "billing_company_id": null,
+  "address_id": 9433719,
+  "makereport": null,
+  "package_deal": 0,
+  "address": {
+    "address_id": 9433719,
+    "primary_address": "Strøket 6",
+    "secondary_address": "",
+    "post_code": "1371",
+    "post_location": "Asker",
+    "geography": "Norge/Akershus/Asker"
+  },
+  "contacts": [
+    {
+      "id": 33728476,
+      "name": null,
+      "email": "asker@noreiendom.no",
+      "description": null,
+      "contact_fields": [
+        {
+          "id": 83297168,
+          "section": "DEFAULT",
+          "type": 1,
+          "label": "PHONE",
+          "position": 1,
+          "value": "67129422"
+        }
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "id": 1413158376,
+      "name": "mapcoordinatex",
+      "type": 9,
+      "position": 1,
+      "label": "Kart-koordinat (X-akse)",
+      "value": "6641875.0",
+      "object_id": 22086
+    },
+    {
+      "id": 1413158377,
+      "name": "mapcoordinatey",
+      "type": 9,
+      "position": 1,
+      "label": "Kart-koordinat (Y-akse)",
+      "value": "244183.0",
+      "object_id": 22086
+    },
+    {
+      "id": 1413158378,
+      "name": "mapclienturl",
+      "type": 2,
+      "position": 1,
+      "label": "URL til kartklient",
+      "value": "http://zett.gisline.no/ZettBrowser/map.aspx?x=6641875&y=244183&scale=10800&title=",
+      "object_id": 22086
+    },
+    {
+      "id": 1413158379,
+      "name": "mappreviewurl",
+      "type": 2,
+      "position": 1,
+      "label": "URL til kart-preview",
+      "value": "http://www.webatlas.no/wms-location/?REQUEST=GetMap&SERVICE=WMS&LAYERS=N250_Hoydelag,N50_Arealdekke,N250_Vann,N50_Adm grenser,N50_Hoyde,N50_Samferdsel,N50_Bygg og anlegg,N50_Stedsnavn&SRS=EPSG:32633&BBOX=243183,6641075,245183,6642675&WIDTH=250&HEIGHT=200&FORMAT=image/png&",
+      "object_id": 22086
+    },
+    {
+      "id": 1413158380,
+      "name": "mapresolvedaddress",
+      "type": 1,
+      "position": 1,
+      "label": "Adresse fra kartoppslag",
+      "value": "STRØKET 6, 1383 ASKER",
+      "object_id": 22086
+    },
+    {
+      "id": 1413158381,
+      "name": "mapcoordinatelon",
+      "type": 9,
+      "position": 1,
+      "label": "Kart-koordinat (Lengdegrader)",
+      "value": "10.433919531542072",
+      "object_id": 22086
+    },
+    {
+      "id": 1413158382,
+      "name": "mapcoordinatelat",
+      "type": 9,
+      "position": 1,
+      "label": "Kart-koordinat (breddegrader)",
+      "value": "59.83517191812294",
+      "object_id": 22086
+    },
+    {
+      "id": 1413158383,
+      "name": "homepage",
+      "type": 2,
+      "position": 1,
+      "label": "Hjemmeside",
+      "value": "http://www.dnbnor.no",
+      "object_id": 22086
+    }
+  ],
+  "media": [
+    {
+      "id": null,
+      "type": 2,
+      "position": 1,
+      "title": "Stor logo",
+      "description": null,
+      "reference": "3c/17/3c17a9b2e1c56804629b3ce690a64086-C22086"
+    }
+  ],
+  "subcompanies": null
+}

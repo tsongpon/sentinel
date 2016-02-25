@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://jsonschema.net",
+  "type": "object",
+  "properties": {
+    "category_id": {
+      "id": "http://jsonschema.net/category_id",
+      "type": "integer"
+    },
+    "name": {
+      "id": "http://jsonschema.net/name",
+      "type": "string"
+    },
+    "full_name": {
+      "id": "http://jsonschema.net/full_name",
+      "type": "string"
+    },
+    "type": {
+      "id": "http://jsonschema.net/type",
+      "type": "string"
+    },
+    "parent": {
+      "id": "http://jsonschema.net/parent",
+      "type": ["null", "integer"]
+    },
+    "link": {
+      "id": "http://jsonschema.net/link",
+      "type": ["null", "string"]
+    },
+    "deprecated": {
+      "id": "http://jsonschema.net/deprecated",
+      "type": "boolean"
+    },
+    "numbering": {
+      "id": "http://jsonschema.net/numbering",
+      "type": ["null", "integer"]
+    }
+  },
+  "required": [
+    "category_id",
+    "name",
+    "full_name",
+    "type",
+    "parent",
+    "link",
+    "deprecated",
+    "numbering"
+  ]
+}
